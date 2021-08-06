@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import CounterControl from '../../components/CounterControl/CounterControl'
 import CounterOutput from '../../components/CounterOutput/CounterOutput'
 import { connect } from 'react-redux'
+import * as actionTypes from '../../store/actions'
 
 class Counter extends Component {
    
@@ -28,13 +29,13 @@ const mapDispatchToProps = dispatch => {
     return {
         onIncrementCounter: () => {
             return dispatch({
-                type: 'INCREMENT',
+                type: actionTypes.INCREMENT,
                 value: 1
             })
         },
         onDecrementCounter: () => {
             return dispatch({
-                type: 'DECREMENT',
+                type: actionTypes.INCREMENT,
                 value: 1
             })
         },
