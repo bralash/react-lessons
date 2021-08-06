@@ -23,6 +23,7 @@ const rootReducer = (state = initialState, action) => {
     return state;
 }
 
+
 // Store
 const store = createStore(rootReducer)
 console.log('[Store Creation]',store.getState())
